@@ -376,8 +376,9 @@ section p.footer {
 
 
 section#lightbg {
-    background: var(--lightblue);
-    color: var(--darkblue);
+    /*background: var(--lightblue);
+    color: var(--darkblue);*/
+    background: linear-gradient(90deg, var(--lightblue) 0%, var(--white) 100%);
 }
 
 .about-image {
@@ -387,7 +388,7 @@ section#lightbg {
 }
 
 section#hero {
-    background: linear-gradient(90deg, var(--lightblue) 0%, var(--gray) 100%);
+    background: linear-gradient(90deg, var(--lightblue) 0%, var(--white) 100%);
 }
 
 
@@ -469,8 +470,7 @@ section#pricing {
 }
 
 section#contact {
-    background: var(--lightblue);
-    color: var(--darkblue);
+    background: linear-gradient(90deg, var(--lightblue) 0%, var(--white) 100%);
 }
 
 
@@ -497,7 +497,29 @@ section .preview {
     border-radius: 40px;
     background: var(--white);
     overflow: hidden;
+    transition: transform 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6), box-shadow 0.4s ease;
+    transform: scale(1);
+    
 }
+
+
+section .preview:hover {
+    /*max-width: 720px;*/
+    transition: transform 0.4s ease;
+    transform: scale(1.1);
+    max-width: 960px;
+    max-height: 480px;
+    margin: var(--mediumPadding) auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.24), 0px 24px 40px rgba(0, 0, 0, 0.24);
+    border-radius: 40px;
+    background: var(--white);
+    overflow: hidden;
+
+}
+
+
+
+
 
 section .preview-medium {
     max-width: 340px;
@@ -559,6 +581,66 @@ section p.copyright {
     max-width: 220px;
 }
 
+
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: var(--darkblue);
+    color: var(--lightblue);
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04);
+    padding: 10px 20px 10px 20px;
+    border-radius: 15px;
+    right:100%;
+    opacity: 0;
+    transition: opacity 0.5s;
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+  .tooltip:hover .tooltiptext {
+    opacity: 0.9;
+  }
+
+  .tooltip02 {
+    position: relative;
+    display: flex;
+    align-items:flex-end;
+    justify-content: center;
+  }
+  
+  .tooltip02 .tooltiptext02 {
+    visibility: hidden;
+    width: 160px;
+    background-color: var(--white);
+    color: var(--darkblue);
+    text-align: center;
+    padding: 10px 20px 10px 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04);
+    opacity: 0;
+    transition: opacity 0.5s;
+    margin-bottom: 15px;
+
+    position: absolute;
+    z-index: 100;
+  }
+  
+  .tooltip02:hover .tooltiptext02 {
+    visibility: visible;
+  }
+  .tooltip02:hover .tooltiptext02 {
+    opacity: 0.8;
+  }
 
 
 
