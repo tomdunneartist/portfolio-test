@@ -16,24 +16,18 @@
   -moz-osx-font-smoothing: grayscale;
   font-feature-settings: "kern", "liga", "clig", "calt";
 }
-
-
 .rubik-variable {
   font-family: "Rubik", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
 }
-
-
 .outfit-variable {
   font-family: "Outfit", sans-serif;
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
 }
-
-
 :root {
   --c-bg: hsl(0, 0%, 98%);
   --c-bg-alt: hsl(0, 0%, 96%);
@@ -49,11 +43,9 @@
   background: var(--c-bg);
   color: var(--c-text);
 }
-
 em {
     font-weight: 100;
 }
-
 body {
   font-size: 15px;
   line-height: 28px;
@@ -122,7 +114,7 @@ h3 {
 
 .portfolio {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-gap: 1rem;
   padding: 0 1rem;
 }
