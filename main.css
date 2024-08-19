@@ -53,7 +53,7 @@ body {
 header {
   display: grid;
   grid-template-columns: 1fr;
-  grid-gap: 1rem;
+  grid-gap: 0.5rem;
   padding: 3rem 1rem 1rem;
 }
 @media (min-width: 600px) {
@@ -151,7 +151,6 @@ h3 {
 }
 
 
-
 @media (min-width: 600px) {
   .portfolio {
     padding: 0 3rem;
@@ -230,7 +229,16 @@ footer small {
 
 .project-image {
   margin: auto;
-  width: 70%;
+  width: 60%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0 8px 24px;
+  transition: transform 300ms ease-out, box-shadow 300ms ease-out;
+}
+
+.project-image-small {
+  margin: auto;
+  width: 30%;
   height: auto;
   border-radius: 5px;
   box-shadow: rgba(149, 157, 165, 0.2) 0 8px 24px;
